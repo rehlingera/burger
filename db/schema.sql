@@ -1,10 +1,9 @@
-CREATE DATABASE burgers_db;
-
-USE burgers_db;
+USE fp1bmqq3ya8q6wwb;
 
 CREATE TABLE burgers (
 	id INT AUTO_INCREMENT NOT NULL,
     burger_name VARCHAR(255) NOT NULL,
     devoured BOOL DEFAULT false,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,
     PRIMARY KEY (id)
 );

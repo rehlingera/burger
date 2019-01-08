@@ -1,4 +1,4 @@
-USE burgers_db;
+USE fp1bmqq3ya8q6wwb;
 
 INSERT INTO burgers (burger_name)
 	VALUES ("Ultimate Beast Master"),

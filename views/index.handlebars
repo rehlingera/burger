@@ -3,6 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
+            {{!-- Display all undevoured burgers on the left side, each with a devour button --}}
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
@@ -12,6 +13,7 @@
             </ul>
         </div>
         <div class="col-md-4">
+            {{!-- Form for the submission of a new burger in the center, with a picture of a burger above it --}}
             <form class="create-form">
                 <img src = "/assets/img/burger.png" style="width:100%">
                 <div class="form-group">
@@ -25,6 +27,7 @@
             </form>
         </div>
         <div class="col-md-4">
+            {{!-- Display all devoured burgers on the right side --}}
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}

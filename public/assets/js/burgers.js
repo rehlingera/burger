@@ -1,4 +1,6 @@
+// Have the page load before executing the following code
 $(function() {
+    // Function to change a burger's devoured column to true when the devour button is clicked
     $(".devour").on("click", function(event) {
         var id = $(this).data("id");
         var devour = $(this).data("devour");
@@ -16,6 +18,7 @@ $(function() {
         });
     });
 
+    // Function to submit a new burger when the fields are filled out and the submit button is clicked
     $(".create-form").on("submit", function(event) {
         event.preventDefault();
         var newBurger = {
